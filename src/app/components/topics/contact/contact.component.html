@@ -1,0 +1,43 @@
+<div class="contact">
+    <div class="info">
+        <h1>Conatct</h1>
+    </div>
+    <div class="content d-flex flex-column gap-3">
+        <div class="head">
+            <h3>I'm Always Open To Discussing Produuct</h3>
+            <h1>design work or partnerships.</h1>
+        </div>
+        <div class="form">
+            <form class="d-flex flex-column" [formGroup]="contactForm">
+                <div class="group name">
+                    <input formControlName="name" type="text" class="input">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name *</label>
+                </div>
+                <div class="group email">
+                    <input formControlName="email" type="email" class="input">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email *</label>
+                </div>
+                <div class="group textarea">
+                    <textarea formControlName="message" class="input"></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Message *</label>
+                </div>
+                <div class="button">
+                    <!-- <button *ngIf="!sending" [disabled]="contactForm.invalid" (click)="send()" (click)="onSubmit()"  class="btn btn-primary">submit</button>
+                    <button *ngIf="sending" class="btn btn-success" (click)="onSubmit()">sending</button> -->
+                    <button [ngClass]="{
+                    'btn': contactForm.invalid,
+                    'btn-primary' : !contactForm.invalid && !sending,
+                    'btn-success': sending && !contactForm.invalid
+                    }"
+                    [disabled]="contactForm.invalid" (click)="onSubmit()">{{button}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

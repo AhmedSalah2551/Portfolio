@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+    ul{
+        display: none !important;
+    }
+}
+ul{
+    width: fit-content;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 65px;
+        height: 65px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #212425;
+        margin-bottom: 20px;
+        color: #a6a6a6;
+        justify-content: space-between;
+        &:last-child{
+            margin-bottom: 0px !important;
+        }
+        &:hover{
+            background: linear-gradient(180deg, #fa5252, #e12a72);
+            color: #fff;
+            svg{
+                fill: #fff;
+            }
+            transition: 0.3s ease-in-out;
+        }
+        &.active{
+            background: linear-gradient(180deg, #fa5252, #e12a72);
+            color: #fff;
+            svg{
+                fill: #fff;
+            }
+        }
+    }
+}

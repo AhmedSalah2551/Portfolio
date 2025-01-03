@@ -1,0 +1,126 @@
+.resume{
+    background-color: #000;
+    border-radius: 10px;
+    padding: 50px;
+    .info{
+        margin-bottom: 30px;
+        h1{
+            position: relative;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 180px;
+                height: 3px;
+                background:linear-gradient(180deg, #fa5252, #e12a72);
+                left: 25%;
+                top: 50%;
+                transform: translatey(-50%);
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+            @media (max-width:1145px) {
+                &::after{
+                  width: 200px;
+                  left: 40%;
+                }
+            }
+            @media (max-width:576px) {
+                &::after{
+                  width: 130px;
+                  left: 53%;
+                }
+            }
+            @media (max-width:375px) {
+              &::after{
+                width: 90px;
+                left: 65%;
+              }
+          }
+        }
+    }
+    .row{
+        @media (max-width:1145px) {
+            &{
+                flex-direction: column;
+            }
+        }
+    }
+    .education,
+    .experience {
+        @media (max-width:1145px) {
+            &{
+                width: 100%;
+            }
+        }
+        margin-bottom: 30px;
+        .head{
+            display: flex;
+            margin-bottom: 10px;
+            i{
+                margin-right: 10px;
+                font-size: 30px;
+                background: -webkit-linear-gradient(180deg, #fa5252, #e12a72);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h2{
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        .item{
+            border: 1px solid #2c2c2c;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            span, .name, p{
+                font-size: 14px;
+                color: #9b9b9b;
+            }
+            h3{
+                margin: 0%;
+                color: #fff;
+            }
+        }
+    }
+    .section{
+        .skills,
+        .knowledge{
+            @media (max-width:1145px) {
+                &{
+                    width: 100%;
+                }
+            }
+            h2{
+                color:#fff;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .item {
+                margin-bottom: 20px;
+                span{
+                    font-size: 14px;
+                    color: #9b9b9b;
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                    display: block;
+                }
+            }
+            .knowledes{
+                flex-wrap: wrap;
+                span{
+                    display: block;
+                    background: #1c1c1c;
+                    color:#9b9b9b;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

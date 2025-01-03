@@ -1,0 +1,115 @@
+.about{
+    background-color: #000;
+    border-radius: 10px;
+    padding: 50px;
+    .info{
+        margin-bottom: 30px;
+        h1{
+            position: relative;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 250px;
+                height: 3px;
+                background:linear-gradient(180deg, #fa5252, #e12a72);
+                left: 20%;
+                top: 50%;
+                transform: translatey(-50%);
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+            @media (max-width:1145px) {
+              &::after{
+                width: 200px;
+                left: 30%;
+              }
+          }
+            @media (max-width:576px) {
+              &::after{
+                width: 150px;
+                left: 40%;
+              }
+          }
+          @media (max-width:375px) {
+            &::after{
+              width: 120px;
+              left: 47%;
+            }
+        }
+        }
+        p{
+            line-height: 1.7;
+            color: #88a694;
+            font-size: 16px;
+        }
+    }
+    .skills{
+        h1{
+            color: #fff;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+          .success {
+            position: relative;
+            background-color: #000;
+            border: 1px solid #353535;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            padding: 20px 0px 20px 60px;
+            width: 48%;
+            @media (max-width:1145px) {
+              &{
+                width: 100%;
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+              }
+            }
+          }
+          .icon{
+            @media (max-width:1145px) {
+              &{
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            i{
+              font-size: 38px;
+              color: #e12a72;
+            }
+          }
+          .success-prompt-wrap {
+            margin-left: 0.75rem;
+          }
+
+          .success-prompt-heading {
+            @media (max-width:1145px) {
+              &{
+                margin-top: 70px;
+              }
+            }
+            font-weight: 500;
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
+          }
+
+          .success-prompt-prompt {
+            margin-top: 0.5rem;
+            color: #a6a6a6;
+            font-size: 16px;
+            line-height: 1.75;
+            font-weight: 500;
+            max-width: 90%;
+          }
+    }
+}

@@ -1,0 +1,35 @@
+<div class="about">
+    <div class="info">
+        <h1>About</h1>
+        <p>
+            I'm a Front-End Web Developer from Cairo, Egypt. With a passion for crafting seamless 
+            digital experiences, I specialize in bringing designs to life through code. Whether 
+            it's building responsive layouts, 
+            optimizing user interfaces, or enhancing user interactions.
+        </p>
+        <p>My journey is all about transforming intricate concepts into visually stunning 
+            and user-friendly interfaces. Let's collaborate to turn your ideas into captivating 
+            online experiences.
+        </p>
+    </div>
+    <div class="skills">
+        <h1>What I Do!</h1>
+        <div class="row w-100 justify-content-between">
+            <div class="success d-flex col-6" *ngFor="let item of item; let index = index trackBy:trackByFn">
+                <div class="icon">
+                    <i [class]="item.icon" [style]="{'color':item.color}"></i>
+                </div>
+                <div class="success-prompt-wrap">
+                    <p class="success-prompt-heading">
+                        {{item.head}}
+                    </p>
+                    <div class="success-prompt-prompt">
+                        <p>
+                            {{item.text}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

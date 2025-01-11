@@ -1,0 +1,27 @@
+ul{
+    background-color: #000;
+    padding: 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 19px -5px rgba(255, 255, 255, 0.32);
+    -webkit-box-shadow: 0px 10px 19px -5px rgba(255, 255, 255, 0.32);
+    -moz-box-shadow: 0px 10px 19px -5px rgba(255, 255, 255, 0.32);
+    li{
+        padding: 10px;
+        cursor: pointer;
+        color: #a6a6a6;
+        span{
+            margin-top: 2px;
+        }
+        svg{
+            margin-right: 10px;
+        }
+        &.active{
+            font-weight: bold;
+            color: #fa5252;
+        }
+    }
+    li:hover{
+        color: #fa5252;
+        transition: 0.2s ease-in-out;
+    }
+}

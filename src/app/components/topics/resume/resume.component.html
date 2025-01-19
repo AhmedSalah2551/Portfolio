@@ -1,0 +1,52 @@
+<div class="resume">
+    <div class="info">
+        <h1>Resume</h1>
+    </div>
+    <div class="row w-100">
+        <div class="col-lg-6 col-md-12 education">
+            <div class="head">
+                <i class="bi bi-mortarboard"></i>
+                <h2>Education</h2>
+            </div>
+            <div class="content d-flex flex-column">
+                <div class="item d-flex flex-column gap-2" *ngFor="let education of education ; let index = index trackBy:trackByFn">
+                    <span>{{education.date}}</span>
+                    <h3> {{education.field}}</h3>
+                    <p>{{education.location}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 experience col-md-12">
+            <div class="head">
+                <i class="bi bi-briefcase"></i>
+                <h2>Experience</h2>
+            </div>
+            <div class="content d-flex flex-column">
+                <div class="item d-flex flex-column gap-2" *ngFor="let experience of experience ; let index = index trackBy:trackByFn">
+                    <span>{{experience.date}}</span>
+                    <h3>{{experience.field}}</h3>
+                    <p>{{experience.location}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row w-100 section">
+        <div class="skills col-6">
+            <h2>knowledges</h2>
+            <div class="item" *ngFor="let skills of skills ; let index = index; trackBy:trackByFn">
+                <div class="details d-flex w-100 justify-content-between">
+                    <span>{{skills.title}}</span>
+                </div>
+                <div class="progress" style="height: 5px;">
+                    <div [class]="skills.class" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="knowledge col-6">
+            <h2>Working Skills</h2>
+            <div class="knowledes d-flex gap-3">
+                <span *ngFor="let knowledges of knowledges; let index = index; trackBy:trackByFn">{{knowledges.skill}}</span>
+            </div>
+        </div>
+    </div>
+</div>

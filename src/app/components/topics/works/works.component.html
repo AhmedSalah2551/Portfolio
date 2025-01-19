@@ -1,0 +1,29 @@
+<div class="works">
+    <div class="info">
+        <h1>Works</h1>
+    </div>
+    <ul class="w-100 d-flex">
+        <li
+            (click)="filter('all')"
+            [class.active]="selectedFilter === 'all'">All</li>
+        <li
+            (click)="filter('angular')"
+            [class.active]="selectedFilter === 'angular'">Angular</li>
+        <li
+            (click)="filter('js')"
+            [class.active]="selectedFilter === 'js'">JS</li>
+        <li
+            (click)="filter('html&css')"
+            [class.active]="selectedFilter === 'html&css'">Html&Css</li>
+    </ul>
+    <div class="elements row w-100 justify-content-between">
+        <div class="element col-6 d-flex flex-column" data-aos="zoom-in"
+        *ngFor="let element of result; let index = index; trackBy: trackByFn">
+            <a class="w-100">
+                <img class="w-100 h-100" [src]="element.img" alt="img" (click)="openDialog(element.id - 1)">
+            </a>
+            <span>{{element.tools}}</span>
+            <h5 (click)="openDialog(element.id - 1)">{{element.name}}</h5>
+        </div>
+    </div>
+</div>

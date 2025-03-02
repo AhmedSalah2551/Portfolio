@@ -13,7 +13,7 @@ export class WorksComponent {
   data : any[] = [
     {
       id:1,
-      name:"Advanced ToDoList",
+      name:"Taskify",
       img:"https://i.postimg.cc/GmYcjJMV/advanced.jpg",
       repositery:["https://github.com/AhmedSalah2551/Advanced_ToDoList.git"],
       preview:["https://ahmedsalah2551.github.io/Advanced_ToDoList/"],
@@ -156,12 +156,10 @@ export class WorksComponent {
     },
     {
       id:11,
-      name:"Crud",
+      name:"EmpowerHup",
       img:"https://i.postimg.cc/KvLbwfr1/Capture.jpg",
-      repositery:["https://github.com/AhmedSalah2551/crud-admin.git",
-                  "https://github.com/AhmedSalah2551/crud-user.git"],
-      preview:["https://ahmedsalah2551.github.io/crud-admin/",
-                "https://ahmedsalah2551.github.io/crud-user/",],
+      repositery:["https://github.com/AhmedSalah2551/crud-admin.git"],
+      preview:["https://ahmedsalah2551.github.io/crud/"],
       tools:"angular",
       content:[
         "admin account: admin@admin.com",
@@ -182,7 +180,20 @@ export class WorksComponent {
         "Ensures admins can efficiently assign and manage tasks.",
         "6- User Access Control:",
         "Guarantees smooth operation by restricting deactivation if tasks are pending."
-      ]
+      ],
+      api:'https://testmessi.onrender.com/api-docs'
+    },
+    {
+      id:12,
+      name:"Freelance Market",
+      img:"https://i.postimg.cc/Z506w4Qz/freelance.jpg",
+      repositery:["https://github.com/AhmedSalah2551/freelance_frontend.git"],
+      preview:["https://freelance2551.netlify.app/"],
+      tools:"angular",
+      content:[
+        "NodeJs, Express, MongoDB, Swagger, Angular, Angular-Material, Tailwind Freelance Market a full MEAN web stack platform. it enables users to showcase their services, apply for others' services, manage offers by accepting or rejecting them and allow users to edit their profiles. The system includes JWT authentication, and a responsive UI for an optimized user experience",
+      ],
+      api:'https://app.swaggerhub.com/apis/freelance-572/freelance-api/1.0.0'
     },
   ]
   constructor(private dialogRef : MatDialog){}

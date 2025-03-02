@@ -16,7 +16,7 @@
       <li class="d-flex col-12 col-md-5" *ngFor="let repo of item.repositery">
         <i class="bi bi-person"></i>
         <h5>Repositery:</h5>
-        <a [href]="repo" target="_blank">{{ repo.name }}/Github</a>
+        <a [href]="repo" target="_blank">{{ repo.name }}Github</a>
       </li>
       <li class="d-flex col-12 col-md-5">
         <i class="bi bi-code-slash"></i>
@@ -27,6 +27,11 @@
         <i class="bi bi-box-arrow-up-right"></i>
         <h5>Preview:</h5>
         <a [href]="link" target="_blank">{{ item.name }}</a>
+      </li>
+      <li class="d-flex col-12 col-md-5" *ngIf="item.api">
+        <i class="bi bi-box-arrow-up-right"></i>
+        <h5>Api:</h5>
+        <a [href]="item.api" target="_blank">{{ item.name }}</a>
       </li>
     </ul>
   </div>

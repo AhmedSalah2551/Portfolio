@@ -195,6 +195,18 @@ export class WorksComponent {
       ],
       api:'https://app.swaggerhub.com/apis/freelance-572/freelance-api/1.0.0'
     },
+    {
+      id:13,
+      name:"Video Player Course",
+      img:"https://i.postimg.cc/0Qgx5nzC/Capture1.jpg",
+      repositery:["https://github.com/AhmedSalah2551/Video-Player-Course.git"],
+      preview:["https://video-player-course.netlify.app/"],
+      tools:"angular",
+      content:[
+        "Angular, Angular-Material, Bootstrap", "Video Player Course is a Eng Ali Shahin Task for Fron-Ent Developer",
+      ],
+      api:'https://app.swaggerhub.com/apis/freelance-572/freelance-api/1.0.0'
+    },
   ]
   constructor(private dialogRef : MatDialog){}
 

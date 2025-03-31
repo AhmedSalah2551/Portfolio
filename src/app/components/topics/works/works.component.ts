@@ -204,8 +204,7 @@ export class WorksComponent {
       tools:"angular",
       content:[
         "Angular, Angular-Material, Bootstrap", "Video Player Course is a Eng Ali Shahin Task for Fron-Ent Developer",
-      ],
-      api:'https://app.swaggerhub.com/apis/freelance-572/freelance-api/1.0.0'
+      ]
     },
   ]
   constructor(private dialogRef : MatDialog){}

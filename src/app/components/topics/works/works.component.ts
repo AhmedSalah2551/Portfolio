@@ -160,7 +160,7 @@ export class WorksComponent {
       img:"https://i.postimg.cc/KvLbwfr1/Capture.jpg",
       repositery:["https://github.com/AhmedSalah2551/crud-admin.git"],
       preview:["https://ahmedsalah2551.github.io/crud/"],
-      tools:"angular",
+      tools:["angular", "Nodejs&Nestjs"],
       content:[
         "admin account: admin@admin.com",
         "admin password: 12345",
@@ -189,7 +189,7 @@ export class WorksComponent {
       img:"https://i.postimg.cc/Z506w4Qz/freelance.jpg",
       repositery:["https://github.com/AhmedSalah2551/freelance_frontend.git"],
       preview:["https://freelance2551.netlify.app/"],
-      tools:"angular",
+      tools:["angular", "Nodejs&Nestjs"],
       content:[
         "NodeJs, Express, MongoDB, Swagger, Angular, Angular-Material, Tailwind Freelance Market a full MEAN web stack platform. it enables users to showcase their services, apply for others' services, manage offers by accepting or rejecting them and allow users to edit their profiles. The system includes JWT authentication, and a responsive UI for an optimized user experience",
       ],
@@ -235,7 +235,13 @@ trackByFn(index: number, item: any): number {
       if (category === 'all') {
         this.result = [...this.data];
       } else {
-        this.result = this.data.filter(item => item.tools === category);
+        this.result = this.data.filter(item => {
+          if (Array.isArray(item.tools)) {
+            return item.tools.includes(category);
+          } else {
+            return item.tools === category;
+          }
+        });
       }
     }
 }

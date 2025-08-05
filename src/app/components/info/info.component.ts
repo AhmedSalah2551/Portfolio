@@ -9,7 +9,7 @@ export class InfoComponent {
   item =[
       {
         title :"phone",
-        value :"+01125686634",
+        value :"+971523070745",
         icon: "bi bi-phone",
         color:"#E93B81"
       },
@@ -21,7 +21,7 @@ export class InfoComponent {
       },
       {
         title :"Location",
-        value :"cairo",
+        value :"Dubai, UAE",
         icon: "bi bi-geo-alt-fill",
         color:"#FD7590"
       },

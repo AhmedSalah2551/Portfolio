@@ -26,6 +26,16 @@ export class ResumeComponent {
       date:"2019-now",
       field:"Angular, RxJs, Angular Material, Primeng, RestfulApi, ",
       location:"Freecodemap"
+    },
+    {
+      date:"2023-now",
+      field:"NodeJs, ExpressJs, MongoDB, Mongoose",
+      location:"CodeZone"
+    },
+    {
+      date:"2024-now",
+      field:"Nestjs, TypeORM, PostgreSQL, Prisma, Microservices",
+      location:"Udemy"
     }
   ];
   experience = [
@@ -54,7 +64,35 @@ export class ResumeComponent {
     {skill:"rxjs"},
     {skill:"unit testing"},
     {skill:"lazy loading"},
-    {skill:"Restful Api"}
+    {skill:"Restful Api"},
+    {skill:"NodeJs"},
+    {skill:"ExpressJs"},
+    {skill:"MongoDB"},
+    {skill:"Mongoose"},
+    {skill:"Nestjs"},
+    {skill:"TypeORM"},
+    {skill:"PostgreSQL"},
+    {skill:"Prisma"},
+    {skill:"Microservices"},
+    {skill:"Middlewares"},
+    {skill:"WebSockets"},
+    {skill:"RESTful Services"},
+    {skill:"GraphQL"},
+    {skill:"Git"},
+    {skill:"GitHub"},
+    {skill:"Figma"},
+    {skill:"Authorization"},
+    {skill:"Authentication"},
+    {skill:"JWT"},
+    {skill:"OOP"},
+    {skill:"Design Patterns"},
+    {skill:"Data Structures"},
+    {skill:"Algorithms"},
+    {skill:"Responsive Design"},
+    {skill:"Agile Methodology"},
+    {skill:"Jira"},
+    {skill:"Scrum"},
+    {skill:"Slack"},
   ];
   skills=[
     {

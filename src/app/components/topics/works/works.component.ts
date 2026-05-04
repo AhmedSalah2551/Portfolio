@@ -188,7 +188,7 @@ export class WorksComponent {
       name:"Freelance Market",
       img:"https://i.postimg.cc/Z506w4Qz/freelance.jpg",
       repositery:["https://github.com/AhmedSalah2551/freelance_frontend.git"],
-      preview:["https://freelance2551.netlify.app/"],
+      preview:["https://freelancers-market.netlify.app/"],
       tools:["angular", "Nodejs&Nestjs"],
       content:[
         "NodeJs, Express, MongoDB, Swagger, Angular, Angular-Material, Tailwind Freelance Market a full MEAN web stack platform. it enables users to showcase their services, apply for others' services, manage offers by accepting or rejecting them and allow users to edit their profiles. The system includes JWT authentication, and a responsive UI for an optimized user experience",
@@ -200,8 +200,8 @@ export class WorksComponent {
       name:"Video Player Course",
       img:"https://i.postimg.cc/0Qgx5nzC/Capture1.jpg",
       repositery:["https://github.com/AhmedSalah2551/Video-Player-Course.git"],
-      preview:["https://video-player-course.netlify.app/"],
-      tools:"angular",
+      preview:["https://udemy-course-page.netlify.app/"],
+      tools:["angular"],
       content:[
         "Angular, Angular-Material, Bootstrap", "Video Player Course is a Eng Ali Shahin Task for Fron-Ent Developer",
       ]

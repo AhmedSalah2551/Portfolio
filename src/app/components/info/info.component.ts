@@ -6,31 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  item =[
-      {
-        title :"phone",
-        value :"+971523070745",
-        icon: "bi bi-phone",
-        color:"#E93B81"
-      },
-      {
-        title :"Email",
-        value :"@ahmed20015510",
-        icon: "bi bi-envelope-paper",
-        color:"#6AB5B9"
-      },
-      {
-        title :"Location",
-        value :"Dubai, UAE",
-        icon: "bi bi-geo-alt-fill",
-        color:"#FD7590"
-      },
-      {
-        title :"Birthday",
-        value :"May 5, 2001",
-        icon: "bi bi-calendar2-week",
-        color:"#C17CEB"
-      }
+  item = [
+    {
+      title: "phone",
+      value: "+201125686634",
+      icon: "bi bi-phone",
+      color: "#E93B81"
+    },
+    {
+      title: "Email",
+      value: "@ahmed20015510",
+      icon: "bi bi-envelope-paper",
+      color: "#6AB5B9"
+    },
+    {
+      title: "Location",
+      value: "Egypt, Cairo",
+      icon: "bi bi-geo-alt-fill",
+      color: "#FD7590"
+    },
+    {
+      title: "Birthday",
+      value: "May 5, 2001",
+      icon: "bi bi-calendar2-week",
+      color: "#C17CEB"
+    }
   ]
   trackByFn(index: number, item: any): number {
     return item.id;
